@@ -1,0 +1,312 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: "New Fonte";
+    src: url('../font/newFonte.ttf');
+}
+
+/* ======  HEADER  ======= */
+
+header {
+    background-image: url("../img/fdb.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    padding-top: 1px;
+}
+
+
+header h1 {
+    font-family: "New Fonte";
+    padding: 10px;
+    color: #85A57A;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.scrolled {
+    background-color: whitesmoke;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #85A57A;
+}
+
+#burger {
+    display: none;
+}
+
+.deplacement {
+    left:0;
+    transition: all 1s;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+a {
+    color: #85A57A;
+}
+
+a:hover {
+    color: mediumpurple;
+    text-decoration: underline;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: whitesmoke;
+    background-color: #85A57A;
+}
+
+.banner {
+    width: 60%;
+    height: 20%;
+    border: 3px dotted white;
+    background: #638a63a8;
+    margin: 240px auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner h1 {
+    font-family: "Dancing Script";
+    font-size: 6em;
+    color: whitesmoke;
+
+}
+
+/* =======  ABOUT US  ========== */
+
+#section1 h2 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: #517F41;
+    margin: 30px 0 30px 0;
+    font-size: 3em;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph i {
+    text-align: center;
+    font-size: 45px;
+    color: #AAC0A2;
+    margin-bottom: 30px;
+}
+
+/* ========= SLOGAN ======= */
+
+.sloganSection {
+    background-image: url("../img/bg3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+}
+
+.slogan {
+    width: 70%;
+    height: 50%;
+    border: 3px dotted white;
+    background: #8aa08aa8;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan h1 {
+    font-family: "Dancing Script";
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* ========= TEAM ======== */
+
+#section2 h2 {
+    font-family: 'Courgette', cursive;
+    color: #517F41;
+    font-size: 3em;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+
+#section2 h3 {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Courgette', cursive;
+}
+
+#section2 img {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid #84A579;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team p {
+    text-align: center;
+}
+
+.hovering {
+    border-radius: 50%;
+    background-color: #8aa08aa8;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: Opx;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: opacity linear 1s;
+    transform: scale(0.8);
+}
+
+.hovering i {
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.parentHovering {
+    position: relative;
+}
+
+.imgTeam img {
+    width: 100%;
+}
+
+.parentHovering:hover .hovering {
+    opacity: 1;
+}
+
+/* ========== SLIDER =========== */
+
+.sliderSection {
+    background-image: url("../img/bg2.jpg");
+    height: 65vh;
+    width: 100vw;
+    background-size: cover;
+    margin-top: 30px;
+    background-attachment: fixed;
+
+}
+
+.sliderSection img {
+    border-radius: 45px;
+    border: 3px dotted whitesmoke;
+}
+
+.sliderSection ul {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* =========== QUAMS ========== */
+
+#section3 h2 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: #517F41;
+    margin: 30px 0 30px 0;
+    font-size: 3em;
+}
+
+#section3 img {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* ========== CONTACT ========== */
+
+footer {
+    background-color: #A9C0A1;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer {
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer div {
+    border: 3px dotted whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    padding: 20px;
+    margin: 0;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+
+@media (max-width: 768px) {
+    header ul {
+        position: fixed;
+        top: 0;
+        left: -800px;
+        list-style: none;
+        padding: 40px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        background-color: #d5e0d1;
+        border-radius: 30px;
+        box-shadow: 8px 8px 12px #84949a;
+        color: whitesmoke;
+    }
+
+    #burger {
+        display: inherit;
+        padding: 15px;
+        font-size: 3em;
+        color: #85A57A;
+    }
+
+    .slogan h1 {
+        font-size: 1.6em;
+    }
+
+}
+

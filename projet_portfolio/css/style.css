@@ -1,0 +1,454 @@
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    margin: 0;
+}
+
+/* ====== HEADER ======= */
+
+header {
+    background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(24, 23, 23, 0.5)), url("../images/laptop.jpg");
+    height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+    background-size: cover;
+}
+
+header h1 {
+    color: whitesmoke;
+}
+
+.navbarr {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbarr i {
+    border-radius: 35px;
+    background-color: #4a4a4a99;
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbarr ul {
+    position: fixed;
+    top: 0;
+    left: -800px;
+    background: #080808fa;
+    list-style: none;
+    padding: 40px;
+    z-index: 10;
+}
+
+.navbarr li {
+    padding-bottom: 25px;
+}
+
+ul.deplacement {
+    left:0;
+    transition: all 1s;
+}
+
+.navbarr a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.ban {
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 140px 0 0 0;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: grey;
+    margin-top: 0;
+}
+
+.ban1 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    width: 600px;
+    margin: auto;
+}
+
+.logo_social  {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.logo_social i {
+    font-size: 2em;
+    border-radius: 75px;
+    background-color: #4e4e4f7d;
+    padding: 15px;
+    margin-right: 6px;
+    width: 25px;
+    height: 30px;
+    text-align: center;
+}
+
+/* ====== ABOUT ME ======= */
+
+.section_about_me {
+    margin-bottom: 25px;
+}
+
+.photo_barney {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.description {
+    padding: 0 10px 0 10px;
+}
+
+.download_contact {
+    margin: 0 0 30px 10px;
+}
+
+.skill_container {
+    border-radius: 5px;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 7px RGBA(0, 0, 0, 0.15);
+    margin: 0 0 30px 10px;
+}
+
+@keyframes progress_skill1 {
+    from { width: 0%; }
+    to { width: 95%; }
+}
+
+@keyframes progress_skill2 {
+    from { width: 0%; }
+    to { width: 90%; }
+}
+
+@keyframes progress_skill3 {
+    from { width: 0%; }
+    to { width: 98%; }
+}
+
+.skill1 {
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    width: 95%;
+    color: whitesmoke;
+    animation: 4s progress_skill1;
+}
+
+.skill2 {
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    width: 90%;
+    color: whitesmoke;
+    animation: 4s progress_skill2;
+}
+
+.skill3 {
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    width: 98%;
+    color: whitesmoke;
+    animation: 4s progress_skill3;
+}
+
+.skill_container p {
+    padding: 5px 0 5px 20px;
+}
+
+.button_download_contact1 {
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 6px 20px 6px 20px
+}
+
+.button_download_contact2 {
+    border: 1px solid black;
+    border-radius: 4px;
+    color: mediumpurple;
+    background-color: white;
+    padding: 6px 20px 6px 20px
+}
+
+/* ====== CERTIFICATION ======= */
+
+.img_carousel_1 {
+    border-radius: 160px;
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.owl-carousel .owl-item img {
+    width: 450px;
+}
+
+.para1_carousel {
+    margin: 60px 0 60px 0;
+    text-align: center;
+}
+
+.img_carousel_2 {
+    margin: auto;
+    margin-top: 150px;
+}
+
+.para2_carousel {
+    margin: 60px 0 60px 0;
+    text-align: center;
+}
+
+.section_certification, .section_contact {
+    background-color: #F7F7F7;
+}
+
+/* ====== PORTFOLIO ======= */
+
+.portfolio ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+.portfolio li {
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.large_portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.medium_portfolio1, .medium_portfolio2 {
+    text-align: center;
+}
+
+.litlePorfolio {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.div_icone_text {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 87%;
+    width: 90%;
+    bottom: 7%;
+    left: 5%;
+    opacity: 0;
+    transition: opacity linear 1s;
+}
+
+.portfolio p {
+    margin-top: 175px;
+}
+
+.icone1 {
+    margin-right: 5px;
+    padding: 6px;
+    background-color: #020202bf;
+    border-radius: 50px;
+    color: whitesmoke;
+}
+
+.icone2 {
+    padding: 6px;
+    background-color: #020202bf;
+    border-radius: 50px;
+    color: whitesmoke;
+}
+
+.litlePorfolio:hover .div_icone_text{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 87%;
+    width: 90%;
+    bottom: 7%;
+    left: 5%;
+}
+
+.active1 {
+    text-decoration: underline;
+}
+
+/* ====== FOOTER ======= */
+
+
+.section_contact {
+    margin-top: 30px;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire div {
+    margin-bottom: 10px;
+}
+
+.button_contact {
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 6px 20px 6px 20px;
+    font-size: 1em;
+}
+
+.div_button_contact {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-size: 1em;
+}
+
+textarea {
+    border: none;
+    font-size: 1em;
+}
+
+.section_contact h1 {
+    padding-top: 30px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+footer div {
+    text-align: center;
+}
+
+/* ====== MEDIA QUERIES =======*/
+
+
+@media (min-width: 750px) {
+
+    /* ====== HEADER ======= */
+
+    .navbarr {
+        background: #6b65657a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .navbarr i {
+        display: none;
+    }
+
+    .navbarr ul {
+        position: static;
+        top: 0;
+        background: none;
+        list-style: none;
+        padding: 15px;
+        display: flex;
+        left: 800px;
+    }
+
+    .navbarr li {
+        margin-right: 15px;
+        padding: 0;
+    }
+
+    .navbarr a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .firstdiv {
+        z-index: 1;
+        margin-top: 0;
+        padding-top: 120px;
+    }
+
+    header h1 {
+        margin-top: 100px;
+    }
+
+    /* ====== ABOUT ME ======= */
+
+    .fullscreen_about_me {
+        display: flex;
+    }
+
+    .photo_barney {
+        margin: 0;
+    }
+
+    .text_about_me {
+        margin-left: 15px;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 30%;
+    }
+
+    .medium_portfolio1, .medium_portfolio2{
+        display: flex;
+    }
+
+    .litlePorfolio {
+        margin-right: 20px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .portfolio p {
+        margin-top: 85px;
+    }
+
+    .portfolio img {
+        width: 100%
+    }
+
+    .portfolio a {
+        color: black;
+        text-decoration: none;
+    }
+
+}

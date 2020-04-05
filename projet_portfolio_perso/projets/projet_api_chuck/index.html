@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Projet API Chuck Norris Facts</title>
+    </head>
+    <body>
+    <div class="photo">
+        <img src="chuck.png" alt="Logo de Chuck Norris"/>
+    </div>
+    <div class="bouton">
+       <button onclick="genere()" >Générer une facts</button>
+       <button id="top10" >Top 10</button>
+       <button id="lastFacts" >Dernières facts</button>
+    </div>
+    <div id="rep">
+
+    </div>
+
+    <div class="autre invisible" id="hiddenButton">
+        <button onclick="genere()">Une autre !</button>
+    </div>
+    <div class="autre invisible" id="hiddenButton2">
+        <button id="previous">Afficher les 10 précédents</button>
+        <button id="next">Afficher les 10 suivants</button>
+    </div>
+    <div class="autre invisible" id="hiddenButton3">
+        <button id="previous2">Afficher les 10 précédents</button>
+        <button id="next2">Afficher les 10 suivants</button>
+    </div>
+
+    <script src="ajax1.js"></script>
+    </body>
+</html>

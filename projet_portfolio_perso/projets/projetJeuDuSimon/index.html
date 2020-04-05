@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
+        <title>Jeu du Simon</title>
+    </head>
+    <body>
+    <div id="app">
+        <button @click="newGame">
+            NOUVELLE PARTIE
+        </button>
+        <hr>
+        <h3>{{ score }}</h3>
+        <hr>
+        <div>
+            <span class="carre" @click="selectSquare('hautGauche')" :class="{ bleu: hautGauche }"></span>
+            <span class="carre" @click="selectSquare('hautDroite')" :class="{ rouge: hautDroite }"></span>
+        </div>
+        <div>
+            <span class="carre" @click="selectSquare('basGauche')" :class="{ vert: basGauche }"></span>
+            <span class="carre" @click="selectSquare('basDroite')" :class="{ jaune: basDroite }"></span>
+        </div>
+        <div>
+            <h1>La règle du jeu Simon</h1>
+            <p>
+                C'est un jeu au principe simple où le joueur doit mémoriser l'enchaînement de touches lumineuses et
+                le reproduire. Le but étant de reproduire la plus longue série de couleurs générée aléatoirement par le Simon.
+                À chaque tour une nouvelle touche est ajoutée à la série et la difficulté augmente au fur et à mesure de
+                la partie car la mémoire du joueur est de plus en plus sollicitée.
+            </p>
+            <p>
+                1- Au début de la partie, une des 4 touches s’allume de façon aléatoire.<br/>
+                2- C'est ensuite au tour du joueur de presser la même touche.<br/>
+                3- A l'étape suivante, le jeu rallume la même touche puis en allume ensuite une seconde, encore une fois de façon aléatoire.<br/>
+                4- Le joueur doit reproduire cet enchaînement lumineux en utilisant sa mémoire.<br/>
+                5- Et ainsi de suite... À chaque tour, le Simon ajoute une nouvelle touche à la fin de la série et le jeu devient de plus en plus difficile
+                car la mémoire du joueur est mise à l’épreuve.<br/>
+                6- Le jeu est terminé dès que le joueur commet la première erreur, c'est à dire quand il presse le mauvais bouton. Donc, tant que le joueur ne
+                commet pas d'erreur, le jeu continue, c'est donc un jeu sans fin!
+            </p>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./index.js" ></script>
+    </body>
+</html>

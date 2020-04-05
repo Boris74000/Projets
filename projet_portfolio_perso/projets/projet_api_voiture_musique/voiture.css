@@ -1,0 +1,21 @@
+section {
+    margin-top: 30px;
+}
+
+h1 {
+    padding-left: 25px;
+}
+
+section > button {
+    margin-left: 25px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+.form_car {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="musique.css" type="text/css">
+        <title>API</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="musique.html">Mes API</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="musique.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="musique.html">Gestion des musiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="voiture.html">
+                        Gestion des voitures
+                    </a>
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>-->
+        </div>
+    </nav>
+    <section>
+        <h1>Ma Musique</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Ajouter une musique</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Trier une musique</button>
+
+        <!--<div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">tri par </label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected value="all">Titre</option>
+                <option value="Genres">Genre</option>
+                <option value="Artistes">Artiste</option>
+                <option value="Dates">Date</option>
+                <option value="Temps">Temps</option>
+            </select>
+        </div>-->
+
+
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button> -->
+        <table class="table table-striped table-dark">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Artiste</th>
+                <th scope="col">Date</th>
+                <th scope="col">Temps</th>
+            </tr>
+            </thead>
+            <tbody id="begin_tbody">
+
+
+            </tbody>
+        </table>
+
+        <!-- Modal AJOUTER -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Détails</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form_music">
+                            <label for="titre">Titre :</label>
+                            <input type="text" name="titre" id="titre">
+                        </div>
+                        <div class="form_music">
+                            <label for="artiste">Artiste :</label>
+                            <input type="text" name="artiste" id="artiste">
+                        </div>
+                        <div class="form_music">
+                            <label for="genre">Genre :</label>
+                            <input type="text" name="genre" id="genre">
+                        </div>
+                        <div class="form_music">
+                            <label for="date">Date :</label>
+                            <input type="text" name="date" id="date">
+                        </div>
+                        <div class="form_music">
+                            <label for="temps">Temps :</label>
+                            <input type="text" name="temps" id="temps">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_add_music">Ajouter</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_sort_music">Trier</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal VOIR -->
+        <div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel2">Détails</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form_music">
+                            <label for="titre2">Titre :</label>
+                            <input type="hidden" id="idcache">
+                            <input type="text" name="titre2" id="titre2">
+                        </div>
+                        <div class="form_music">
+                            <label for="artiste2">Artiste :</label>
+                            <input type="text" name="artiste2" id="artiste2">
+                        </div>
+                        <div class="form_music">
+                            <label for="genre2">Genre :</label>
+                            <input type="text" name="genre2" id="genre2">
+                        </div>
+                        <div class="form_music">
+                            <label for="date2">Date :</label>
+                            <input type="text" name="date2" id="date2">
+                        </div>
+                        <div class="form_music">
+                            <label for="temps2">Temps :</label>
+                            <input type="text" name="temps2" id="temps2">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_update_music">Modifier</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_delete_music">Supprimer</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="musique.js"></script>
+    </body>
+</html>

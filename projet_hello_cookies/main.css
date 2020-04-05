@@ -1,0 +1,206 @@
+main {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #EDE9E8;
+	color: grey;
+}
+
+section {
+	display: flex;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+aside {
+	display: flex;
+	background-color: #AD4822;
+	padding-left: 0px;
+	padding-right: 40px;
+
+}
+
+aside ul {
+	list-style: none;
+	color: white;
+	padding: 10px;
+    margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+aside li {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+article {
+	border: 1px black solid;
+	margin: auto;
+}
+
+.menuNav {
+	display: flex;
+	justify-content: space-around;
+	margin-right: 10px;
+}
+.recettesNav {
+	margin-right: 10px;
+}
+.videosNav {
+	margin-right: 10px;
+}
+.contactNav {
+	margin-right: 10px;
+}
+
+.titreEtLogoNav {
+	display: flex;
+}
+
+.logoNav {
+	padding-top: 10px;
+}
+
+.helloCookies {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.4em;
+
+}
+.asideIngredient {
+	display: flex;
+}
+
+header {
+	background-color: #DBB49F;
+}
+
+header p {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding: 25px;
+	font-weight: bold;
+}
+
+
+.prepaRecette {
+	display: flex;
+}
+
+.photo1 {
+	width: 250px;
+	height: 200px;
+}
+.photo2 {
+	width: 250px;
+	height: 200px;
+}
+.photo3 {
+	width: 250px;
+	height: 200px;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	color: #AD4822;
+	font-weight: bold;
+}
+
+button {
+	background-color: #AD4822;
+	width: 170px;
+	height: 50px;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin: 30px;
+	font-weight: bold;
+	font-size: 0.9em;
+} 
+
+.bouton {
+	text-align: center;
+}
+
+.liste {
+	margin-left: 30px;
+}
+
+.texte {
+	margin-left: 30px;
+}
+
+.instructionRecette {
+	background-color: white;
+	margin: 40px 60px 40px 40px;
+}
+
+.photoCookies {
+	margin-top: 40px;
+}
+
+.usten {
+	display: flex;
+}
+
+.ingre {
+	display: flex;
+}
+
+.prepa {
+	display: flex;
+}
+
+i {
+	margin-right: 5px;
+}
+.titreFormulaire {
+	padding: 25px;
+}
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin: 20px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+input, textarea {
+	border-radius: 5px;
+
+}
+.envoyer {
+	background-color: #DFB99E;
+	width: 170px;
+	height: 50px;
+	border-radius: 50px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin: 30px;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+form div{
+	display: flex;
+	margin: 20px;
+}
+
+form label{
+	flex-basis: 15%;
+}
+
+form div input{
+	width: 70%;
+	height: 30px;
+}

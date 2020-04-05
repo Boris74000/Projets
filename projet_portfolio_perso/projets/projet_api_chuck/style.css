@@ -1,0 +1,42 @@
+img {
+    height: 220px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.bouton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    color: whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+
+#rep {
+    border: 1px double black;
+    margin-top: 30px;
+
+}
+
+.para {
+    text-align: center;
+}
+
+.autre {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.visible {
+    display: inherit;
+}
+.invisible{
+    display: none;
+}

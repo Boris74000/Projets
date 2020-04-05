@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3c7f5856f6.js" crossorigin="anonymous"></script>
+        <title> Formulaire </title>
+    </head>
+    <body>
+    	<main>
+    		<nav>
+
+	    		<div class="titreEtLogoNav">
+	    			<div class="logoNav">
+	    				<a href="index.html"><img src="images/cookie-logo.png"></a>
+	    			</div>
+	    			<div class="titreNav">
+	    				<p class="helloCookies"><a href="index.html">Hello COOKIES !</a></p>
+	    			</div>
+	    		</div>
+
+	    		<div class="menuNav">
+	    			<div class="recettesNav">
+	    				<p><a href="index.html">Recettes</a></p>
+	    			</div>
+	    			<div class="videosNav">
+	    				<p> Vidéos </p>
+	    			</div>
+	    			<div class="contactNav">
+	    				<p> Contact </p>
+	    			</div>
+	    		</div>
+
+    		</nav>
+    		<header>
+    			<p class="titreFormulaire"> Formulaire de contact </p>
+    		</header>
+    		<div class="form">
+    			<div class="formulaire">
+	    			<form>
+	    				<div>
+		    				<label for="nom"> Nom </label>
+							<input type="text" name="nom" id="nom" onmouseover="survol('nom')" onmouseout="out('nom')">
+		    			</div>
+		    			<div>
+		    				<label for="prenom"> Prénom </label>
+							<input type="text" name="prenom" id="prenom" onmouseover="survol('prenom')" onmouseout="out('prenom')">
+		    			</div>
+		    			<div>
+		    				<label for="email"> Email </label>
+							<input type="text" name="email" id="email" onmouseover="survol('email')" onmouseout="out('email')">
+		    			</div>
+		    			<div>
+		    				<label for="sujet"> Sujet </label>
+							<input type="text" name="sujet" id="sujet" onmouseover="survol('sujet')" onmouseout="out('sujet')">
+		    			</div>
+		    			<div>
+		    				<label for="message"> Message </label>
+							<textarea name="message" id="message" rows="30" cols="143"></textarea>
+		    			</div>
+	    			</form>
+		    		<div class="bouton">
+	    				<form>
+	    					<input type="submit" value="Envoyer" class="envoyer" onclick="envoie()">
+	    				</form>
+	    			</div>
+    			</div>
+    		</div>
+    	</main>
+        <script src="main.js"></script>
+    </body>
+</html>

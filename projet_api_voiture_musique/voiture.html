@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="voiture.css" type="text/css">
+    <title>API</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="voiture.html">Mes API</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="voiture.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="musique.html">Gestion des musiques</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="voiture.html">
+                    Gestion des voitures
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>-->
+    </div>
+</nav>
+<section>
+    <h1>Mes Voitures</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Ajouter une voiture</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Trier les voitures</button>
+
+    <!--<div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">tri par </label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected value="all">Titre</option>
+            <option value="Genres">Genre</option>
+            <option value="Artistes">Artiste</option>
+            <option value="Dates">Date</option>
+            <option value="Temps">Temps</option>
+        </select>
+    </div>-->
+
+
+    <!-- Button trigger modal
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+    <table class="table table-striped table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Marque</th>
+            <th scope="col">Modèle</th>
+            <th scope="col">Gamme</th>
+            <th scope="col">Prix</th>
+            <th scope="col">#</th>
+        </tr>
+        </thead>
+        <tbody id="begin_tbody">
+
+
+        </tbody>
+    </table>
+
+    <!-- Modal AJOUTER -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Détails</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addForm">
+                        <div class="form_car">
+                            <label for="marque">Marque :</label>
+                            <input type="text" name="marque" id="marque">
+                        </div>
+                        <div class="form_car">
+                            <label for="model">Modèle :</label>
+                            <input type="text" name="model" id="model">
+                        </div>
+                        <div class="form_car">
+                            <label for="gamme">Gamme :</label>
+                            <input type="text" name="gamme" id="gamme">
+                        </div>
+                        <div class="form_car">
+                            <label for="prix">Prix :</label>
+                            <input type="text" name="prix" id="prix">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_add_car">Ajouter</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_sort_car">Trier</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal VOIR -->
+    <div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel2">Détails</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form_car">
+                        <label for="marque2">Marque :</label>
+                        <input type="hidden" id="idcache">
+                        <input type="text" name="marque2" id="marque2">
+                    </div>
+                    <div class="form_car">
+                        <label for="model2">Modèle :</label>
+                        <input type="text" name="model2" id="model2">
+                    </div>
+                    <div class="form_car">
+                        <label for="gamme2">Gamme :</label>
+                        <input type="text" name="gamme2" id="gamme2">
+                    </div>
+                    <div class="form_car">
+                        <label for="prix2">Prix :</label>
+                        <input type="text" name="prix2" id="prix2">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_update_car">Modifier</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="button_delete_car">Supprimer</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</section>
+
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script src="voiture.js"></script>
+</body>
+</html>

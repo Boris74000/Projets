@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Star";
+    src: url('font/starjedi/starjhol.ttf');
+}
+
+body {
+    color: #FBE935;
+    background-image: url("../img/ciel.jpg");
+    background-size: cover;
+    font-family: "Star";
+
+}
+
+.logo {
+    text-align: center;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.topmenu p {
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid yellow;
+}
+
+a {
+    text-decoration: none;
+    color: #FBE935;
+}
+
+img {
+    width: 400px;
+}
+
+
+.buttonLoad {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.loadIt {
+    border-radius: 10px;
+    border: 1px outset yellow;
+    background-color: black;
+    color: #FBE935;
+    height: 50px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-family: "Star";
+}
+
+.planet {
+    display: flex;
+    width: 800px;
+    height: 1000px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.name {
+    flex-basis: 50%;
+}
+
+.detail {
+    flex-basis: 50%;
+
+}
+
+.para {
+    text-align: center;
+}
+
+.divG {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visible {
+    display: inherit;
+}
+.invisible{
+    display: none;
+}
+
+.divDetail {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .name {
+        flex-basis: 30%;
+    }
+
+    .detail {
+        flex-basis: 35%;
+    }
+
+}

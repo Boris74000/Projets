@@ -1,0 +1,232 @@
+body {
+	background: linear-gradient(70deg, grey, white);
+	font-family: 'Bree Serif', serif;
+}
+
+aside {
+	background-color: #4B4D4E;
+	width: 350px;
+	height: 1280px;
+	display: inline-block;
+	color: white;
+}
+
+section {
+	width: 700px;
+	display: inline-block;
+	height: 1280px;
+	vertical-align: top;
+	background-color: white;
+}
+
+/* Bloc HEADER */
+
+header {
+	width: 600px;
+	padding-top: 60px;
+	margin-bottom: 55px;
+}
+
+.cb {
+	font-weight: bold;
+}
+.dauv {
+	color: #75E5F5;
+}
+.creat {
+	border-bottom: 3px #75E5F5 solid;
+}
+
+.entete {
+	line-height: 0.3em;
+	font-size: 1.9em;
+}
+
+
+/* Photo du CV */
+
+.photo {
+	padding: 15px 0 0 90px;
+}
+
+img {
+	border: 5px white solid;
+	border-style: double;
+	border-radius: 120px;
+}
+
+/* Les titres qui sont dans ASIDE */
+
+h3 {
+	border-bottom: 2px solid white;
+	margin: 20px 10px 0 20px;
+	padding-bottom: 10px;
+}
+
+/* Les Titres qui sont dans SECTION */
+
+h4 {
+	border-bottom: 2px solid grey;
+	padding-bottom: 5px;
+}
+.xp {
+	margin-right: 30px;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+/* Icones du bloc contact dans ASIDE */
+
+.iconephone {
+	list-style-image: url("icones/phone.png");
+}
+.iconemail {
+	list-style-image: url("icones/mail.png");
+}
+.iconesite {
+	list-style-image: url("icones/web.png");
+}
+.iconeaddress {
+	list-style-image: url("icones/localisation.png");
+}
+
+/* Bloc PROF SKILLS */
+
+.profskills {
+	width: 350px;
+}
+	
+/* Sous-block de PROF SKILLS */
+
+.skills1 {
+	display: inline-block;
+	width: 45%; 
+	padding-left: 15px;
+}
+.barreprogress {
+	display: inline-block;
+	width: 40%;
+
+}
+
+/* Block PERS SKILLS */
+
+.persskills {
+	width: 350px;
+}
+
+/* Sous-block de PERS SKILLS */
+
+.skills2 {
+	display: inline-block;
+	width: 45%;
+	padding-left: 15px;
+}
+.barreprogress2 {
+	display: inline-block;
+}
+
+/* Block LANGUAGE */
+
+
+/* Sous-Block de LANGUAGE */
+
+.languagetype {
+	display: inline-block;
+	padding-left: 15px;
+}
+.languagelevel {
+	display: inline-block;
+	margin-left: 170px;
+	padding-left: 60px;
+}
+
+
+/* Block EXPERIENCE */
+
+
+/* Sous-block D'EXPERIENCE */
+
+/* Tous les éléments situés à gauche */
+
+.poste {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	padding-left: 20px;	
+}
+
+/* Tous les éléments situés à droite */
+
+.description {
+	display: inline-block;
+	padding-left: 10px;
+	width: 450px;
+}
+
+.contenu3 {
+	display: inline-block;
+	width: 200px;
+	margin-left: 250px;
+}
+
+/* Largeur de tous les éléments */
+
+.contenu {
+	height: 70px;
+}
+.contenu1 {
+	height: 30px;
+}
+
+/* Disposition des descriptions des référents */
+
+.contenu2 {
+	padding-top: 20px;
+}
+
+
+/* Largeur des noms des référents */
+
+.nomreferent {
+	height: 30px;
+}
+
+
+/* Block EDUCATION */
+
+
+/* Sous-block d'EDUCATION */
+
+.university {
+	display: inline-block;
+}
+
+.description2 {
+	display: inline-block;
+}
+
+/* Liste dans Contact */
+
+ul {
+	width: 270px;
+	margin-left: 10px;
+}
+
+/* Modifie les espaces entre les lignes dans PROF et PERS SKILLS */
+
+.espace {
+	line-height: 1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
