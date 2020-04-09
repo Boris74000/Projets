@@ -120,6 +120,12 @@ article h1 {
     color: white;
 }
 
+.cv {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
 /* ========== PARCOURS ======== */
 
 .career {
@@ -363,15 +369,12 @@ article h1 {
 
 .allProject {
     display: flex;
-    /*flex-wrap: wrap;*/
     margin: auto;
 }
 
 .parentHovering {
     margin: 20px;
     width: 300px;
-
-
 }
 
 .parentHovering img {
@@ -458,6 +461,10 @@ article h1 {
     font-size: 1.1em;
 }
 
+.jsModalClose {
+    cursor: pointer;
+}
+
 
 
 
@@ -489,6 +496,7 @@ article h1 {
     background-color: black;
     padding: 6px 20px 6px 20px;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .div_button_contact {
@@ -557,6 +565,11 @@ footer span {
 }
 
 /* =============== MEDIA QUERIES =============== */
+@media (max-width: 1250px) {
+    .logo_it {
+        width: 70% !important;
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -565,6 +578,7 @@ footer span {
         display: block;
         font-size: 3em;
         padding: 22px;
+        cursor: pointer;
     }
 
     #navBar {
@@ -607,6 +621,14 @@ footer span {
 
     .career img {
         width: 80%;
+    }
+
+    .logo_it {
+        width: 100% !important;
+    }
+
+    .arrowIcon {
+        padding-top: 50px;
     }
 
     .imgSkill {
