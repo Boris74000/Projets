@@ -256,6 +256,56 @@ article h1 {
     background-color: #F7F7F7;
 }
 
+.logo_skills {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo_skills p {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+@keyframes progress_skill1 {
+    from { width: 0%; }
+    to { width: 70%; }
+}
+
+@keyframes progress_skill2 {
+    from { width: 0%; }
+    to { width: 60%; }
+}
+
+@keyframes progress_skill3 {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress_skill4 {
+    from { width: 0%; }
+    to { width: 65%; }
+}
+
+@keyframes progress_skill5 {
+    from { width: 0%; }
+    to { width: 45%; }
+}
+
+@keyframes progress_skill6 {
+    from { width: 0%; }
+    to { width: 55%; }
+}
+
+@keyframes progress_skill7 {
+    from { width: 0%; }
+    to { width: 30%; }
+}
+
+@keyframes progress_skill8 {
+    from { width: 0%; }
+    to { width: 30%; }
+}
+
 .skill1 {
     background-color: #D9534F;
     display: flex;
@@ -264,6 +314,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill1;
 }
 
 .skill2 {
@@ -274,6 +325,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill2;
 }
 
 .skill3 {
@@ -284,6 +336,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill3;
 }
 
 .skill4 {
@@ -294,6 +347,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill4;
 }
 
 .skill5 {
@@ -304,6 +358,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill5;
 }
 
 .skill5 img {
@@ -319,6 +374,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill6;
 }
 
 .skill7 {
@@ -329,6 +385,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill7;
 }
 
 .skill8 {
@@ -339,6 +396,7 @@ article h1 {
     height: 100%;
     border-radius: 5px;
     align-items: center;
+    animation: 4s progress_skill8;
 }
 
 /* ======== PROJET ========= */
