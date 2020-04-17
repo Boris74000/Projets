@@ -1,14 +1,13 @@
-/* font-family: 'Merriweather', serif; */
 body {
     font-family: 'Poppins', sans-serif;
     min-width: 320px;
 }
 
-* {box-sizing: border-box;}
+
 
 
 header {
-    background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(24, 23, 23, 0.5)), url("../img/lacannecy.jpg");
+    background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(24, 23, 23, 0.5)), url("../img/img_header.jpg");
     background-size: cover;
     height: 100vh;
     color: whitesmoke;
@@ -710,6 +709,10 @@ footer span {
         text-align: center;
         padding: 0;
         margin: 0;
+    }
+
+    .text_presentation {
+        padding: 0 30px 0 30px;
     }
 
     .imgLogo {
