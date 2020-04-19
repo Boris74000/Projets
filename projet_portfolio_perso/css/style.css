@@ -108,11 +108,27 @@ article h1 {
 .presentation {
     background-color: #d5e0f2;
     padding: 100px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.text_presentation {
+.presentation p {
     text-align: center;
     padding: 0 80px 0 80px;
+}
+
+.presentation a {
+    margin-top: 30px;
+}
+
+.presentation span {
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 6px 20px 6px 20px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .ropeUp {
@@ -137,12 +153,6 @@ article h1 {
     margin-right: 20px;
 }
 
-.dateListCareer ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
 .datePara {
     font-family: 'Merriweather', serif;
     font-weight: bold;
@@ -162,17 +172,13 @@ article h1 {
     justify-content: center;
 }
 
-.dateListCareer li {
-    padding: 10px;
-}
-
-.dateSelection {
-    background-color: #7c88a9;
-    transition: background-color 1s;
-}
-
 .career img {
     width: 50%;
+}
+
+.logo_ropeUp {
+    width: 100%;
+    padding: 0 40px 0 160px;
 }
 
 .titlePosition {
@@ -626,6 +632,16 @@ footer span {
     .logo_it {
         width: 70% !important;
     }
+
+    .logo_ropeUp {
+        padding: 0 40px 0 120px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo_ropeUp {
+        padding: 0 120px 0 160px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -684,8 +700,10 @@ footer span {
         width: 100% !important;
     }
 
-    .arrowIcon {
-        padding-top: 50px;
+    .logo_ropeUp {
+        width: 65% !important;
+        padding: 0 130px 0 120px;
+
     }
 
     .imgSkill {
@@ -702,6 +720,10 @@ footer span {
     .imgCareer {
         display: none;
     }
+
+    .hovering {
+        opacity: 100;
+    }
 }
 
 @media (max-width: 479px) {
@@ -711,7 +733,7 @@ footer span {
         margin: 0;
     }
 
-    .text_presentation {
+    .presentation p {
         padding: 0 30px 0 30px;
     }
 
@@ -721,7 +743,15 @@ footer span {
     }
 
     .titleAndParaCareer {
-        margin: 20px 0 70px 0;
+        margin: 20px 0 15px 0;
+    }
+
+    .skillContainer {
+        width: 345px;
+    }
+
+    .progressBarSkill p {
+        font-size: 0.7em;
     }
 
     .project ul {

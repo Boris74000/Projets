@@ -17,7 +17,6 @@ header {
     padding-top: 1px;
 }
 
-
 header h1 {
     font-family: "New Fonte";
     padding: 10px;
@@ -113,6 +112,10 @@ a:hover {
     font-size: 45px;
     color: #AAC0A2;
     margin-bottom: 30px;
+}
+
+.paragraph p {
+    text-align: center;
 }
 
 /* ========= SLOGAN ======= */
@@ -297,6 +300,10 @@ footer p {
         color: whitesmoke;
     }
 
+    .banner {
+        width: 75%;
+    }
+
     #burger {
         display: inherit;
         padding: 15px;
@@ -308,5 +315,11 @@ footer p {
         font-size: 1.6em;
     }
 
+}
+
+@media (max-width: 479px) {
+    .banner {
+        width: 96%;
+    }
 }
 

@@ -260,7 +260,7 @@ a:hover {
     width: 90%;
     bottom: 7%;
     left: 5%;
-    opacity: 0;
+    opacity: 100;
     transition: opacity linear 1s;
 }
 
@@ -424,10 +424,12 @@ footer div {
         margin-left: 15px;
     }
 
+    /* ========== CAROUSEL ======== */
     .owl-carousel .owl-item img {
         width: 30%;
     }
 
+    /* ========== PORTFOLIO ========== */
     .medium_portfolio1, .medium_portfolio2{
         display: flex;
     }
@@ -436,6 +438,10 @@ footer div {
         margin-right: 20px;
         width: 300px;
         height: 250px;
+    }
+
+    .div_icone_text {
+        opacity: 0;
     }
 
     .portfolio p {

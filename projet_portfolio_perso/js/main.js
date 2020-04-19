@@ -136,44 +136,53 @@ $("#php-filter").on("click", function() {
 function bouger(indice) {
     switch (indice) {
         case 1:
+            document.getElementById("ropeUp").className = "visi";
+            document.getElementById("itAkademy").className = "cache";
+            document.getElementById("driver").className = "cache";
+            document.getElementById("army").className = "cache";
+            break;
+
+        case 2:
+            document.getElementById("ropeUp").className = "cache";
             document.getElementById("itAkademy").className = "visi";
             document.getElementById("driver").className = "cache";
             document.getElementById("army").className = "cache";
-
             break;
-        case 2:
+
+        case 3:
+            document.getElementById("ropeUp").className = "cache";
             document.getElementById("itAkademy").className = "cache";
             document.getElementById("driver").className = "visi";
             document.getElementById("army").className = "cache";
-
             break;
-        case 3:
+
+        case 4:
+            document.getElementById("ropeUp").className = "cache";
             document.getElementById("itAkademy").className = "cache";
             document.getElementById("driver").className = "cache";
             document.getElementById("army").className = "visi";
-
             break;
     }
 }
 
 var indice = 1; // initialisation de la variable indice à 1 car quand on charge la page on arrive sur la div numéro 1 par défaut
 document.getElementById("rightArrowIcon").addEventListener("click", function() { // si on avance
-    if (indice < 3) { // si on est pas à la fin du carousel
+    if (indice < 4) { // si on est pas à la fin du carousel
         bouger(indice + 1); // on affiche l'élément suivant
         indice++; // on augmente notre position sur l'élément suivant
-    } else { //sinon si on est déjà sur indice 3
+    } else { //sinon si on est déjà sur indice 4
         bouger(1); // on retourne sur premier div
         indice = 1; // on marque qu'on est sur la première position
     }
-
 });
+
 document.getElementById("leftArrowIcon").addEventListener("click", function() { // on recule
     if (indice > 1) { // si on recule et qu'on est pas encore au premier élément
         bouger(indice - 1); // on recule vers l'élément précédent
         indice--; // on décrémente notre position sur l'élément précédent
-    } else { // sinon si on arrive sur le premier élément(div)
-        bouger(3); //on retourne sur la dernière div pour faire une continuité
-        indice = 3; // on marque notre position actuelle sur le dernier élément
+    } else { // sinon si on arrive sur le premier élément div
+        bouger(4); //on retourne sur la dernière div pour faire une continuité
+        indice = 4; // on marque notre position actuelle sur le dernier élément
     }
 });
 
