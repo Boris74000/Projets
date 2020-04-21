@@ -70,13 +70,15 @@ $("#list5").on({
 });
 
 /* Initialisation Isotope */
-$grid = $('.large_portfolio').isotope({
-    itemSelector: '.litlePorfolio',
-    masonry: {
-        columnWidth: 100,
-        isFitWidth: true
-    }
-});
+window.onload = function() {
+    $grid = $('.allProject').isotope({
+        itemSelector: '.parentHovering',
+        masonry: {
+            columnWidth: 100,
+            isFitWidth: true
+        }
+    });
+};
 
 /* Lorsqu'on clique sur All, affiche tout et enlève classe à tous les éléments puis ajoute classe à All */
 $("#all-filter").on("click", function () {

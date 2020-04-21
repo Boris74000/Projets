@@ -79,8 +79,8 @@ h2 {
 .ban1 {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    width: 600px;
     margin: auto;
+    text-align: center;
 }
 
 .logo_social  {
@@ -98,6 +98,7 @@ h2 {
     width: 25px;
     height: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 /* ====== ABOUT ME ======= */
@@ -117,6 +118,10 @@ h2 {
 
 .download_contact {
     margin: 0 0 30px 10px;
+}
+
+.download_contact button {
+    cursor: pointer;
 }
 
 .skill_container {
@@ -195,7 +200,7 @@ h2 {
 }
 
 .owl-carousel .owl-item img {
-    width: 450px;
+    width: 330px;
 }
 
 .para1_carousel {
@@ -229,43 +234,45 @@ h2 {
 
 .portfolio li {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.large_portfolio {
+.allProject {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.medium_portfolio1, .medium_portfolio2 {
-    text-align: center;
-}
-
-.litlePorfolio {
-    position: relative;
-    width: 600px;
-    height: 500px;
-    margin-top: 30px;
-}
-
-.div_icone_text {
+.parentHovering {
+    margin: 20px;
+    width: 300px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.76);
-    height: 87%;
-    width: 90%;
-    bottom: 7%;
-    left: 5%;
-    opacity: 100;
-    transition: opacity linear 1s;
 }
 
-.portfolio p {
-    margin-top: 175px;
+.parentHovering img {
+    width: 100%;
+}
+
+.hovering {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: opacity linear 1s;
+    transform: scale(0.8);
+    opacity: 0;
+    background-color: #d5e0f2e0;
+    flex-direction: column;
+}
+
+.parentHovering:hover .hovering {
+    opacity: 1;
 }
 
 .icone1 {
@@ -274,6 +281,7 @@ a:hover {
     background-color: #020202bf;
     border-radius: 50px;
     color: whitesmoke;
+    cursor: pointer;
 }
 
 .icone2 {
@@ -281,15 +289,7 @@ a:hover {
     background-color: #020202bf;
     border-radius: 50px;
     color: whitesmoke;
-}
-
-.litlePorfolio:hover .div_icone_text{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.76);
-    height: 87%;
-    width: 90%;
-    bottom: 7%;
-    left: 5%;
+    cursor: pointer;
 }
 
 .active1 {
@@ -306,6 +306,7 @@ a:hover {
 .formulaire {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .formulaire div {
@@ -318,6 +319,7 @@ a:hover {
     background-color: black;
     padding: 6px 20px 6px 20px;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .div_button_contact {
@@ -325,7 +327,7 @@ a:hover {
 }
 
 input {
-    width: 300px;
+    width: 75%;
     height: 40px;
     border: none;
     font-size: 1em;
@@ -334,6 +336,7 @@ input {
 textarea {
     border: none;
     font-size: 1em;
+    width: 75%;
 }
 
 .section_contact h1 {
@@ -442,10 +445,6 @@ footer div {
 
     .div_icone_text {
         opacity: 0;
-    }
-
-    .portfolio p {
-        margin-top: 85px;
     }
 
     .portfolio img {
