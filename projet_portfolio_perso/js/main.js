@@ -130,6 +130,12 @@ $("#php-filter").on("click", function() {
     $("#php-filter").addClass("active1");
 });
 
+$("#laravel-filter").on("click", function() {
+    $grid.isotope({ filter: '.laravel' });
+    $(".portfolioMenu").removeClass("active1");
+    $("#laravel-filter").addClass("active1");
+});
+
 
 
 //fonction bouger permet d'afficher la div de position indice
