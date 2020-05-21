@@ -19,15 +19,17 @@
 -- Table structure for table `roles`
 --
 
-DROP TABLE IF EXISTS `roles`;
+-- DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
+USE dbs437680;
 CREATE TABLE `roles` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `name_role` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +46,7 @@ UNLOCK TABLES;
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
+-- DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (

@@ -1,8 +1,8 @@
 // Initialisation librairie Typed pour avoir la phrase dynamique dans le header
 var typed = new Typed('.animatedSentence', {
     strings: ["Je suis Charles-Boris DAUVIER", "Je suis apprenant développeur Web et Mobile"],
-    typeSpeed: 60,
-    startDelay: 30,
+    typeSpeed: 80,
+    startDelay: 50,
     loop: true
 });
 

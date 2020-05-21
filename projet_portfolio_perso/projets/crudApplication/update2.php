@@ -7,7 +7,7 @@ if (!empty($_POST) && isset($_POST)) {
     // var_dump($_POST);
 
 
-    $query = "UPDATE projet.roles SET name = :role WHERE id = :role_id";
+    $query = "UPDATE dbs445120.roles SET name = :role WHERE id = :role_id";
 
     $updateRole = $dbConnection->prepare($query);
 

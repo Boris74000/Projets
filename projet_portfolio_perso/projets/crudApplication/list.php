@@ -5,7 +5,7 @@ include "header.php";
 include "connection.php";
 
 // creation d'une requête pour montrer tous les utilisateurs de la table "users"
-$query = 'SELECT users.id, users.name, email, password, phone, roles.name as role FROM projet.users JOIN projet.roles ON users.role_id = roles.id';
+$query = 'SELECT users.id, users.name, email, password, phone, roles.name as role FROM dbs445120.users JOIN dbs445120.roles ON users.role_id = roles.id';
 
 // préparation de la requête avec execution
 $preparedQuery = $dbConnection ->prepare($query);
