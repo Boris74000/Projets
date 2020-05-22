@@ -585,6 +585,26 @@ textarea {
     justify-content: center;
 }
 
+/* ========== CULTURE ============= */
+
+.culture {
+
+}
+
+.culture ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.culture li {
+    margin-right: 10px;
+}
+
+.img_culture {
+    position: relative;
+}
+
 /* ========== FOOTER ============= */
 
 .socialIconFooter {
